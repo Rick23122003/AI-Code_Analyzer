@@ -17,7 +17,7 @@ function App() {
     setCopied(false);
     
     try {
-      const response = await axios.post('http://127.0.0.1:8000/api/review', {
+      const response = await axios.post('https://ai-reviewer-backend-nz61.onrender.com', {
         rawCode: code,
         language: 'python',
         reviewType: reviewType 
