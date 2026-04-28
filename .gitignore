@@ -1,0 +1,54 @@
+# ==========================================
+# 1. SECRETS & ENVIRONMENT VARIABLES (CRITICAL)
+# ==========================================
+.env
+*.env
+Backend/.env
+code-analyzer-ui/.env
+
+# ==========================================
+# 2. PYTHON BACKEND (FastAPI / Virtual Env)
+# ==========================================
+# Ignore the virtual environment folder
+Backend/venv/
+venv/
+env/
+
+# Ignore Python cache files (speeds up execution but shouldn't be shared)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Ignore test caches (if you add PyTest later)
+.pytest_cache/
+.coverage
+
+# ==========================================
+# 3. REACT FRONTEND (Node.js / Vite)
+# ==========================================
+# Ignore heavy dependency folders
+node_modules/
+code-analyzer-ui/node_modules/
+
+# Ignore Vite production build output
+dist/
+dist-ssr/
+code-analyzer-ui/dist/
+
+# Ignore npm/yarn error logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ==========================================
+# 4. OS & CODE EDITOR FILES
+# ==========================================
+# macOS system files (prevents annoying hidden files from uploading)
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# VS Code workspace settings (keeps your personal editor settings private)
+.vscode/
+*.code-workspace
